@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html, learning, research, web" />
+    <title>Forms & Inputs</title>
+  </head>
+  <body>
+    <form action="" method="post">
+      <div>
+        <label for="firstName">Name</label>
+        <br />
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <br />
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <br />
+        <textarea name="message" id="message" cols="16" rows="5"></textarea>
+      </div>
+      <div>
+        <label for="sex">Sex</label>
+        <br />
+        <select name="sex" id="sex">
+          <option value="male">Male</option>
+          <option value="female" selected>Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="age">Age</label>
+        <br />
+        <input type="number" name="age" id="age" min="10" max="100" />
+      </div>
+      <div>
+        <label for="birthdate">Birth Date</label>
+        <br />
+        <input type="date" name="birthdate" id="birthdate" />
+      </div>
+      <div>
+        <label for="birthTime">Birth Time</label>
+        <br />
+        <input type="time" name="birthTime" id="birthTime" />
+      </div>
+      <div>
+        <label for="membership">Membership</label>
+        <br />
+        <input type="radio" name="membership" id="membership" value="standard" checked /> Standard <input type="radio" name="membership" id="membership" value="gold" /> Gold
+        <input type="radio" name="membership" id="membership" value="platinum" /> Platinum
+      </div>
+      <div>
+        <label for="hobbies">Hobbies</label>
+        <br />
+        <input type="checkbox" name="hobbies" id="hobbies" value="sports" checked /> Sports <input type="checkbox" name="hobbies" id="hobbies" value="music" /> Music
+        <input type="checkbox" name="hobbies" id="hobbies" value="tech" /> Technology
+      </div>
+
+      <input type="submit" value="Submit Form" />
+      <input type="reset" value="Reset Form" />
+      <br />
+      <!-- You can add nested elements in Button -->
+      <button type="submit">Submit With Button</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
